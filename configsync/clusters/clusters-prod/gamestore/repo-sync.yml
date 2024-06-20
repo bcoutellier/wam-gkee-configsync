@@ -6,8 +6,8 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: https://github.com/danielmarzini/configsync-application-example
+    repo: https://github.com/bcoutellier/wam-gkee-configsync-apps
     branch: main
     revision: HEAD
-    dir: "configsync/clusters/cluster-east/namespaces/gamestore"
+    dir: "configsync/clusters/clusters-prod/namespaces/gamestore"
     auth: none

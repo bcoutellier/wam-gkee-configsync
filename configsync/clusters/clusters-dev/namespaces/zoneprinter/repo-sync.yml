@@ -6,8 +6,8 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: https://github.com/danielmarzini/configsync-application-example
+    repo: https://github.com/bcoutellier/wam-gkee-configsync-apps
     branch: main
     revision: HEAD
-    dir: "configsync/clusters/cluster-west/namespaces/zoneprinter"
+    dir: "configsync/clusters/clusters-prod/namespaces/zoneprinter"
     auth: none

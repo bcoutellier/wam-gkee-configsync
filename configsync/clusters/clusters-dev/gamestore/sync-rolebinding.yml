@@ -4,9 +4,9 @@ metadata:
   name: syncs-repo
   namespace: gamestore
 subjects:
-- kind: ServiceAccount
-  name: ns-reconciler-gamestore
-  namespace: config-management-system
+  - kind: ServiceAccount
+    name: ns-reconciler-gamestore
+    namespace: config-management-system
 roleRef:
   kind: ClusterRole
   name: edit
