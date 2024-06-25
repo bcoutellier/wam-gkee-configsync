@@ -9,5 +9,5 @@ spec:
     repo: https://github.com/bcoutellier/wam-gkee-configsync-apps
     branch: main
     revision: HEAD
-    dir: "configsync/clusters/clusters-prod/namespaces/zoneprinter"
+    dir: "configsync/clusters/clusters-dev/namespaces/zoneprinter"
     auth: none
