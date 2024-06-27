@@ -3,8 +3,6 @@ kind: RepoSync
 metadata:
   name: repo-sync
   namespace: online-boutique-apps
-annotations:
-  configsync.gke.io/cluster-name-selector: gke-cls-prd-2, gke-cls-prd-3
 spec:
   sourceFormat: unstructured
   git:
