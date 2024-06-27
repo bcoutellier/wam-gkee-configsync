@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: online-boutique
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/bcoutellier/wam-gkee-configsync-apps
+    branch: main
+    revision: HEAD
+    dir: "manifests/online-boutique"
+    auth: none
