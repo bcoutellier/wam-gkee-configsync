@@ -1,7 +1,7 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
-  name: repo-sync
+  name: repo-sync-online-boutique-gateway
   namespace: online-boutique
 annotations:
   configsync.gke.io/cluster-name-selector: gke-cls-prd-1
