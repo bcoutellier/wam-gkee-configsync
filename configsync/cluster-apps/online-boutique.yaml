@@ -1,8 +1,8 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
-  name: repo-sync
-  namespace: online-boutique-apps
+  name: repo-sync-online-boutique-apps
+  namespace: online-boutique
 spec:
   sourceFormat: unstructured
   git:
