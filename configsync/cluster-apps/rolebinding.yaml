@@ -35,4 +35,4 @@ metadata:
 rules:
   - apiGroups: ["net.gke.io"]
     resources: ["*"]
-    verbs: ["get", "list", "watch"]
+    verbs: ["*"]
