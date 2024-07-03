@@ -33,6 +33,6 @@ metadata:
     # Add these permissions to the "view" default role.
     rbac.authorization.k8s.io/aggregate-to-view: "true"
 rules:
-  - apiGroups: ["networking.gke.io"]
+  - apiGroups: ["net.gke.io"]
     resources: ["*"]
     verbs: ["get", "list", "watch"]
