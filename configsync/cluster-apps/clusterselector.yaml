@@ -1,4 +1,4 @@
-apiVersion: configsync.gke.io/v1beta1
+apiVersion: configmanagement.gke.io/v1
 kind: ClusterSelector
 metadata:
   name: cluster-prd-2-selector
@@ -8,7 +8,7 @@ spec:
       location: northamerica-east1
       type: apps
 ---
-apiVersion: configsync.gke.io/v1beta1
+apiVersion: configmanagement.gke.io/v1
 kind: ClusterSelector
 metadata:
   name: cluster-prd-3-selector
