@@ -23,15 +23,6 @@ rules:
   - apiGroups: ["networking.gke.io"]
     resources: ["*"]
     verbs: ["*"]
----
-kind: ClusterRole
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: aggregate-gke-networking-admin
-  labels:
-    # Add these permissions to the "admin" default role.
-    rbac.authorization.k8s.io/aggregate-to-admin: "true"
-rules:
   - apiGroups: ["net.gke.io"]
     resources: ["*"]
     verbs: ["*"]
