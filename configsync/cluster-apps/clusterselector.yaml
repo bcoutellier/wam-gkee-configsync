@@ -17,3 +17,19 @@ spec:
     matchLabels:
       location: northamerica-east2
       type: apps
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: gke-cls-prd-2
+  labels:
+    location: northamerica-east1
+    type: apps
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: gke-cls-prd-3
+  labels:
+    location: northamerica-east2
+    type: apps
