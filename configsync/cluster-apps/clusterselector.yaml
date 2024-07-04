@@ -1,0 +1,19 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: ClusterSelector
+metadata:
+  name: cluster-prd-2-selector
+spec:
+  selector:
+    matchLabels:
+      location: northamerica-east1
+      type: apps
+---
+apiVersion: configsync.gke.io/v1beta1
+kind: ClusterSelector
+metadata:
+  name: cluster-prd-3-selector
+spec:
+  selector:
+    matchLabels:
+      location: northamerica-east2
+      type: apps
