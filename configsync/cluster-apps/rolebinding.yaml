@@ -15,11 +15,10 @@ roleRef:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: aggregate-gke-networking-edit
+  name: aggregate-gke-networking-admin
   labels:
-    # Add these permissions to the "admin" and "edit" default roles.
+    # Add these permissions to the "admin"
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
-    rbac.authorization.k8s.io/aggregate-to-edit: "true"
 rules:
   - apiGroups: ["networking.gke.io"]
     resources: ["*"]
@@ -28,10 +27,10 @@ rules:
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: aggregate-gke-networking-view
+  name: aggregate-gke-networking-admin
   labels:
-    # Add these permissions to the "view" default role.
-    rbac.authorization.k8s.io/aggregate-to-view: "true"
+    # Add these permissions to the "admin" default role.
+    rbac.authorization.k8s.io/aggregate-to-admin: "true"
 rules:
   - apiGroups: ["net.gke.io"]
     resources: ["*"]
