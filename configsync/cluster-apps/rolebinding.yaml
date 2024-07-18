@@ -26,3 +26,6 @@ rules:
   - apiGroups: ["net.gke.io"]
     resources: ["*"]
     verbs: ["*"]
+  - apiGroups: ["gateway.networking.k8s.io"]
+    resources: ["*"]
+    verbs: ["*"]
