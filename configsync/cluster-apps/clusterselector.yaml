@@ -1,7 +1,7 @@
 apiVersion: configmanagement.gke.io/v1
 kind: ClusterSelector
 metadata:
-  name: cluster-prd-2-selector
+  name: cluster-prd-1-selector
 spec:
   selector:
     matchLabels:
@@ -11,7 +11,7 @@ spec:
 apiVersion: configmanagement.gke.io/v1
 kind: ClusterSelector
 metadata:
-  name: cluster-prd-3-selector
+  name: cluster-prd-2-selector
 spec:
   selector:
     matchLabels:
@@ -21,7 +21,7 @@ spec:
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: gke-cls-prd-2
+  name: gke-cls-prd-1
   labels:
     location: northamerica-east1
     type: apps
@@ -29,7 +29,7 @@ metadata:
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: gke-cls-prd-3
+  name: gke-cls-prd-2
   labels:
     location: northamerica-east2
     type: apps
